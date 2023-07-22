@@ -58,3 +58,11 @@ It is the many functionality such as the `stopPropagation()`.
 ## Chapter 7 - useEffect
 
 - `useEffect` is used to produce sideeffect when the component are render, rerender or dependecies changed.
+
+## Chapter 8 - React-Router-Dom v6
+- In the React Router Dom the Particular component are changed or renter insights of all the page is Reload. so, the we have create a three components such as Home , About and Contact Pages.
+- In the Main App.js All the router are import such as the Router, Routes, Route.
+- The `Router` is used the inside of the block of code of routing.
+- The `Routes` are used as the Switches in react v5.
+- The `Route` is used for the path of the components.
+- The Last we have create one component which is the Header for writting the Home, About & Contact.Inside the are `Link` react-router concept learnt linking the Home, About & Contact Page And the `Error` Page is add through the path in `*`.
