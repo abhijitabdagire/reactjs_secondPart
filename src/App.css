@@ -1,0 +1,7 @@
+.data{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 2px;
+
+}
