@@ -1,20 +1,21 @@
 import React from 'react'
 import'./Header.css'
-import { Link } from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 const Header = () => {
+  const navLinkStyle = ({isActive})=>{
+    return{
+      textDecoration: isActive ? "none" : "underline",
+      color: isActive ? "red" : "White",
+      fontSize : "25px"
+    }
+  }
+
   return (
     <div className='Header'>
-        <Link to={"/"}>
-            <h2 style={{color:'white'}}>Home</h2>
-        </Link>
+        <NavLink style={navLinkStyle} to={'/'}>Home</NavLink>
+        <NavLink style={navLinkStyle} to={'/about'}>About</NavLink>
+        <NavLink style={navLinkStyle} to={'/contact'}>Contact Us</NavLink>
         
-        <Link to={"/about"}>
-            <h2 style={{color:'white'}}>About</h2>
-        </Link>
-        
-        <Link to={"/contact"}>
-            <h2 style={{color:'white'}}>Contact Us</h2>
-        </Link>
     </div>
   )
 }

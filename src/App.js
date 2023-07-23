@@ -9,6 +9,9 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Insta from './Insta';
+import Mail from './Mail';
+import UserDetails from './UserDetails';
 function App() {
   
   return (
@@ -16,18 +19,24 @@ function App() {
       <Router>
            <Header></Header>
         <Routes>
+
           {/* Home */}
-          <Route path="/" element={ <Home />}>
-           
+          <Route path='/' element={<Home></Home>}>
           </Route>
+          <Route path=':userId' element={<UserDetails></UserDetails>}></Route>
+        
           {/* About */}
-          <Route path="/about" element={<About />}>
-            
-          </Route>
+          <Route path="/about" element={<About />}></Route>
+
           {/* Contact */}
           <Route path="/contact" element={ <Conatct />} >
+            <Route index element={<Insta></Insta>}></Route>
+            <Route path='insta' element={<Insta></Insta>}></Route>
+            <Route path='mail' element={<Mail></Mail>}></Route>
           </Route>
+
           <Route path="*" element={ <Error />} />
+
         </Routes>
       </Router>
     </> 

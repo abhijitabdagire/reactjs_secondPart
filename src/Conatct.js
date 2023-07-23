@@ -1,10 +1,12 @@
 import React from 'react'
-
+import { Link, Outlet } from 'react-router-dom'
 const Conatct = () => {
   return (
-    <div>
-      <h2>This an Contact Page</h2>
-    </div>
+    <>
+      <Link to={'insta'}><h4>Contact via Instagram</h4></Link>
+      <Link to={'mail'}><h4>Contact via Email</h4></Link>
+      <Outlet/>
+    </>
   )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [state, setState] = useState(2);
@@ -21,18 +22,22 @@ const Home = () => {
 
   return (
     <div>
-      <button onClick={()=> setState(state+5)}>Click Me {state}</button>
+      <button className='btn' onClick={()=> setState(state+5)}>Click Me {state}</button>
       {
         data.map((element, index)=>{
           return(
+            <Link to={`${element.id}`}>
               <div className='data' key={index}>
                 <h4>{element.firstName}</h4>
                 <h4>{element.lastName}</h4>
                 <h4>{element.email}</h4>
               </div>
+            </Link>
+ 
             )
         })
       }
+
     </div>
   )
 }

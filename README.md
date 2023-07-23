@@ -66,3 +66,11 @@ It is the many functionality such as the `stopPropagation()`.
 - The `Routes` are used as the Switches in react v5.
 - The `Route` is used for the path of the components.
 - The Last we have create one component which is the Header for writting the Home, About & Contact.Inside the are `Link` react-router concept learnt linking the Home, About & Contact Page And the `Error` Page is add through the path in `*`.
+
+## Chapter 9 - React-Router-Dom v6 Hook
+
+- In this chapter we have to use `Link` insight of `NavLink` is react router hook is used.
+- And second one is the `Go Back` Button was create in the error page for this the `useNavigate` hook is used.
+- `Nested Route` so we have create a `Insta` & `Mail` Component in the `Contact` component carefully use the path.Not Write the '/' insight of we have only write ' '.
+- We have learn the next concept is the `index` it is simply by default render the particular component.
+- Next we have learn the `dynamic route`so that we are create a one more component which is the `UserDetails`.

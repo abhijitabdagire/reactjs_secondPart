@@ -1,10 +1,16 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom'
 const Error = () => {
+  const navigate = useNavigate()
   return (
-    <div>
+    <>
+      <div>
       404 Page is Not Found
-    </div>
+      </div>
+      <button onClick={()=>{navigate(-1)}}>Go Back</button>
+      
+    </>
+    
   )
 }
 
