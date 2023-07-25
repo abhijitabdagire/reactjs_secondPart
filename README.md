@@ -80,3 +80,10 @@ It is the many functionality such as the `stopPropagation()`.
 - In this chapter we have create three component which is the name `ComA`, `ComB` & `ComC`. The main component is `App.js`.In the this component `ComA` was render and same as In comA was render the ComB and ComB in this Render the ComC. When the large Number of Component which is the difficult. To avoid this we have use the `CreateContext` and `useContext`.
 
 - The first `createContext` was where we have transfer the data than export and we can use anywhere where we want to use simply the import statement. The Multiple state or data pass simply create a one more createContext pass them and use where we want use.
+
+## Chapter 11 - useRef
+
+- `useRef` means that where mutable(change) value which not cause the render And also use the DOM element direct access.
+- In this chapter first we have learned the how many time components are render using `useRef()` & also the to show the previous component render.
+- Next, we have to create a input tag which is use the `ref` on the button tag. when an click the button the input tag direct aacess and perform the different operation on it. 
+
