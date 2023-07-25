@@ -74,3 +74,9 @@ It is the many functionality such as the `stopPropagation()`.
 - `Nested Route` so we have create a `Insta` & `Mail` Component in the `Contact` component carefully use the path.Not Write the '/' insight of we have only write ' '.
 - We have learn the next concept is the `index` it is simply by default render the particular component.
 - Next we have learn the `dynamic route`so that we are create a one more component which is the `UserDetails`.
+
+## Chapter 10 - Context API & useContext
+
+- In this chapter we have create three component which is the name `ComA`, `ComB` & `ComC`. The main component is `App.js`.In the this component `ComA` was render and same as In comA was render the ComB and ComB in this Render the ComC. When the large Number of Component which is the difficult. To avoid this we have use the `CreateContext` and `useContext`.
+
+- The first `createContext` was where we have transfer the data than export and we can use anywhere where we want to use simply the import statement. The Multiple state or data pass simply create a one more createContext pass them and use where we want use.

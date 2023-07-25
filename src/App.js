@@ -12,12 +12,28 @@ import {
 import Insta from './Insta';
 import Mail from './Mail';
 import UserDetails from './UserDetails';
+
+import {useState, createContext} from'react';
+import ComA from './components/ComA';
+
+const AppState = createContext();
+const NameContext = createContext();
 function App() {
-  
+  const [data, setData] = useState("Abhi")
+  const [name, setName] = useState({name: 'Soham ', age: '20'})
   return (
     <>
+      <AppState.Provider value={data}>
+          <NameContext.Provider value={name}>
+            <Header></Header>
+            <ComA ></ComA>    
+          </NameContext.Provider>
+          
+      </AppState.Provider>
+
+
+
       <Router>
-           <Header></Header>
         <Routes>
 
           {/* Home */}
@@ -44,3 +60,4 @@ function App() {
 }
 
 export default App;
+export {AppState, NameContext}

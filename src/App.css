@@ -14,3 +14,19 @@
     border: 1px solid black;
     cursor: pointer;
 }
+
+.ComA{
+    background-color: aqua;
+    padding: 5px;
+    margin: 8px;
+}
+.ComB{
+    background-color: greenyellow;
+    padding: 5px;
+    margin: 8px;
+}
+.ComC{
+    background-color: pink;
+    padding: 5px;
+    margin: 8px;
+}
